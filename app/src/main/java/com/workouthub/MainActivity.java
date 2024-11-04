@@ -19,10 +19,10 @@ import com.workouthub.modules.home.controller.HomeMenu;
 import com.workouthub.modules.setup.controller.SetUpActivity;
 
 public class MainActivity extends AppCompatActivity {
-    TextView title, subtitle;
+    TextView title;
     Button start;
-    ImageView img1, img2;
-    View load_bar, load_bar2;
+    ImageView img1;
+//    View load_bar, load_bar2;
     Animation anim_img1, anim_title, btn_anim, load_progress, load_stop;
     private ActivityMainBinding binding;
 
@@ -33,19 +33,19 @@ public class MainActivity extends AppCompatActivity {
         load_progress = AnimationUtils.loadAnimation(this, R.anim.progress);
         load_stop = AnimationUtils.loadAnimation(this, R.anim.progress_stop);
         title = (TextView) findViewById(R.id.title_txt);
-        subtitle = (TextView) findViewById(R.id.subtitle_txt);
+//        subtitle = (TextView) findViewById(R.id.subtitle_txt);
         start = (Button) findViewById(R.id.btn1);
         img1 = (ImageView) findViewById(R.id.img1);
-        img2 = (ImageView) findViewById(R.id.img2);
-        load_bar = (View) findViewById(R.id.load_bar);
-        load_bar2 = (View) findViewById(R.id.load_bar2);
+//        img2 = (ImageView) findViewById(R.id.img2);
+//        load_bar = (View) findViewById(R.id.load_bar);
+//        load_bar2 = (View) findViewById(R.id.load_bar2);
         img1.startAnimation(anim_img1);
-        img2.startAnimation(anim_img1);
+//        img2.startAnimation(anim_img1);
         title.startAnimation(anim_title);
-        subtitle.startAnimation(anim_title);
+//        subtitle.startAnimation(anim_title);
         start.startAnimation(btn_anim);
-        load_bar.startAnimation(load_progress);
-        load_bar2.startAnimation(load_stop);
+//        load_bar.startAnimation(load_progress);
+//        load_bar2.startAnimation(load_stop);
     }
 
     private void OnBindingAction() {
