@@ -14,7 +14,24 @@
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
         tools:context=".modules.profile.controller.ProfileActivity">
-
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.007" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90000000"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="0dp" />
         <TextView
             android:id="@+id/text_View"
             android:layout_width="wrap_content"
@@ -181,7 +198,7 @@
             android:layout_width="119dp"
             android:layout_height="41dp"
             android:layout_marginStart="25dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="32dp"
             android:background="#000"
             android:text="Save Profile"
             android:textAlignment="center"
@@ -189,7 +206,7 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.468"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
@@ -197,15 +214,15 @@
             android:layout_width="119dp"
             android:layout_height="41dp"
             android:layout_marginStart="25dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="80dp"
             android:background="#000"
-            android:text="Sync Profile"
+            android:text=""
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintHorizontal_bias="0.973"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.Toolbar

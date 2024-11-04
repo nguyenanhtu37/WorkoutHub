@@ -6,18 +6,25 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context="com.workouthub.modules.setup.controller.SetUpActivity">
-
-    <TextView
-        android:id="@+id/login_open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Have you used the app before?"
-        android:textSize="14sp"
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -187,10 +194,9 @@
         android:layout_width="163dp"
         android:layout_height="55dp"
         android:layout_marginBottom="52dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Save Credentials"
+        android:text="Save Profile"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
